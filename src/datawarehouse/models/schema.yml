@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: cleaned_data
+    description: "A table containing cleaned and transformed messages from Telegram channels."
+    columns:
+      - name: id
+        description: "The unique identifier for each message."
+        data_tests:
+          - not_null
+
+      - name: message
+        description: "The text content of the message."
+        data_tests:
+          - not_null
+
+      - name: date
+        description: "The timestamp when the message was sent."
+        data_tests:
+          - not_null
+
+      - name: media_path
+        description: "The URL of the image attached to the message (if any)."
+        data_tests:
+          - not_null
+

@@ -1,0 +1,48 @@
+[0m09:47:36.485108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c07a5bd40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c09b54f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c07f6f080>]}
+
+
+============================== 09:47:36.489007 | 58b6a2e2-6989-43c6-8dce-f831e7017fd1 ==============================
+[0m09:47:36.489007 [info ] [MainThread]: Running with dbt=1.9.2
+[0m09:47:36.489792 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/nebil/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init datawarehouse', 'send_anonymous_usage_stats': 'True'}
+[0m09:47:36.502277 [debug] [MainThread]: Starter project path: /home/nebil/Projects/Python/tenx/MedicalDataWarehouse/env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m09:47:36.506108 [info ] [MainThread]: 
+Your new dbt project "datawarehouse" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:47:36.506941 [info ] [MainThread]: Setting up your profile.
+[0m09:47:36.509770 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m09:47:36.515467 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 0.13081878, "process_in_blocks": "136", "process_kernel_time": 0.092083, "process_mem_max_rss": "89348", "process_out_blocks": "64", "process_user_time": 1.297171}
+[0m09:47:36.516614 [debug] [MainThread]: Command `dbt init` failed at 09:47:36.516414 after 0.13 seconds
+[0m09:47:36.517532 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c07d6be30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c07c4d7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7c07b54740>]}
+[0m09:47:36.518774 [debug] [MainThread]: Flushing usage events
+[0m09:47:37.412782 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:57:32.764319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efce5aa6360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efce5465b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efce559a4b0>]}
+
+
+============================== 09:57:32.767896 | b47546dd-b2b5-4cb9-ba7a-7cc6291afea0 ==============================
+[0m09:57:32.767896 [info ] [MainThread]: Running with dbt=1.9.2
+[0m09:57:32.768518 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/nebil/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:57:32.769067 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/nebil/Projects/Python/tenx/MedicalDataWarehouse/src/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:57:32.770021 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.11161443, "process_in_blocks": "72", "process_kernel_time": 0.131511, "process_mem_max_rss": "88824", "process_out_blocks": "16", "process_user_time": 1.275264}
+[0m09:57:32.770525 [debug] [MainThread]: Command `dbt run` failed at 09:57:32.770388 after 0.11 seconds
+[0m09:57:32.770980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efce564f320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efce640a3c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efce5d4b140>]}
+[0m09:57:32.771449 [debug] [MainThread]: Flushing usage events
+[0m09:57:35.070857 [debug] [MainThread]: An error was encountered while trying to flush usage events
