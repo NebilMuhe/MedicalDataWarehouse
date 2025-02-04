@@ -4,3 +4,6 @@ __pycache__/
 src/scraping/photos/
 src/scraping/telegram_data.csv
 src/scraping/medical_data_warehouse.session
+src/dct/cleaned_data.csv
+.DS_Store
+.csv#
